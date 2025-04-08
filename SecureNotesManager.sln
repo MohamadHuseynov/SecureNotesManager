@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureNotesManager.UI", "SecureNotesManager.UI\SecureNotesManager.UI.csproj", "{6E6C09FC-DA74-402F-A295-86AAED9A403F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureNotesManager.BLL", "SecureNotesManager.BLL\SecureNotesManager.BLL.csproj", "{135F6EEC-F926-423D-B669-C9956C659470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureNotesManager.DAL", "SecureNotesManager.DAL\SecureNotesManager.DAL.csproj", "{FA807598-F5E0-4787-9058-B8024F0C7049}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureNotesManager.Models", "SecureNotesManager.Models\SecureNotesManager.Models.csproj", "{4E66E609-C664-4658-A69E-169C4646786B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E6C09FC-DA74-402F-A295-86AAED9A403F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6C09FC-DA74-402F-A295-86AAED9A403F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6C09FC-DA74-402F-A295-86AAED9A403F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6C09FC-DA74-402F-A295-86AAED9A403F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135F6EEC-F926-423D-B669-C9956C659470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135F6EEC-F926-423D-B669-C9956C659470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135F6EEC-F926-423D-B669-C9956C659470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135F6EEC-F926-423D-B669-C9956C659470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA807598-F5E0-4787-9058-B8024F0C7049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA807598-F5E0-4787-9058-B8024F0C7049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA807598-F5E0-4787-9058-B8024F0C7049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA807598-F5E0-4787-9058-B8024F0C7049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E66E609-C664-4658-A69E-169C4646786B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E66E609-C664-4658-A69E-169C4646786B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E66E609-C664-4658-A69E-169C4646786B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E66E609-C664-4658-A69E-169C4646786B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6109EDD-EA2E-4DB7-B9D1-3809D1BEB757}
+	EndGlobalSection
+EndGlobal
