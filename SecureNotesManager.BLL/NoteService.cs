@@ -14,15 +14,36 @@ namespace SecureNotesManager.BLL
 
         public void AddNote(Note note)
         {
+            note.Content = EncryptionHelper.Encrypt(note.Content);
+
             note.CreatedAt = DateTime.Now;
+            note.ModifiedAt = DateTime.Now;
+
             _context.Notes.Add(note);
             _context.SaveChanges();
         }
 
         public List<Note> GetAllNotes()
         {
-            return _context.Notes.OrderByDescending(n => n.CreatedAt).ToList();
+            var notes = _context.Notes.OrderByDescending(n => n.CreatedAt).ToList();
+
+            foreach (var note in notes)
+            {
+                try
+                {
+                    note.Content = EncryptionHelper.Decrypt(note.Content);
+                }
+                catch
+                {
+                    // اگر رشته رمزنگاری نشده باشه، کاری نمی‌کنیم
+                    // (همون متن ساده رو نشون می‌دیم)
+                }
+            }
+
+            return notes;
         }
+
+
 
         public void DeleteNote(int id)
         {
@@ -36,6 +57,8 @@ namespace SecureNotesManager.BLL
 
         public void UpdateNote(Note note)
         {
+            note.Content = EncryptionHelper.Encrypt(note.Content);
+
             var existing = _context.Notes.Find(note.Id);
             if (existing != null)
             {
