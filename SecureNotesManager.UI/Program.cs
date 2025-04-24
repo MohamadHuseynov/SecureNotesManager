@@ -1,4 +1,4 @@
-namespace SecureNotesManager.UI
+﻿namespace SecureNotesManager.UI
 {
     internal static class Program
     {
@@ -14,4 +14,5 @@ namespace SecureNotesManager.UI
             Application.Run(new FormNotes());
         }
     }
+
 }
